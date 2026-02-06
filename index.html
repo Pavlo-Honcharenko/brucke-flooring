@@ -1,603 +1,515 @@
 <!doctype html>
 <html lang="en">
-	 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
-	
-	<link rel="shortcut icon" href="./assets/img/favicon.png">
-	<title>Home Page</title>
-	<meta name="author" content="">
-	
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+		<link rel="shortcut icon" href="./assets/img/favicon.png">
+		<title>Home Page</title>
+		<meta name="author" content="">
 		<meta name="canonical" content="/">
-	<meta name="dcterms.dateCopyrighted" content="2026">
-	<meta name="geo.placename" content="">
-	<meta name="geo.region" content="en-us">
-	<meta name="robots" content="noindex,nofollow">
-	<meta property="og:type" content="website">
-	<meta name="twitter:card" content="summary">  <script type="module" crossorigin src="./js/common.min.js?v=1770372892165"></script>
-  <script type="module" crossorigin src="./js/main.min.js?v=1770372892165"></script>
-  <link rel="stylesheet" crossorigin href="./css/main.min.css?v=1770372892165">
-</head>
+		<meta name="dcterms.dateCopyrighted" content="2026">
+		<meta name="geo.placename" content="">
+		<meta name="geo.region" content="en-us">
+		<meta name="robots" content="noindex,nofollow">
+		<meta property="og:type" content="website">
+		<meta name="twitter:card" content="summary">
+		<style>
+			@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap);@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap);@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap);@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap);@import url(https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap);*{padding:0;margin:0;border:0}*,::after,::before{box-sizing:border-box}::after,::before{display:inline-block}body,html{height:100%}body{line-height:1;scrollbar-gutter:stable;-ms-text-size-adjust:100%;-moz-text-size-adjust:100%;-webkit-text-size-adjust:100%;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}button{font-family:inherit;font-size:inherit;line-height:inherit;color:inherit;background-color:transparent}a{display:inline-block;color:inherit;text-decoration:none}ul li{list-style:none}img{max-width:100%;height:auto;vertical-align:middle}h1{font-weight:inherit;font-size:inherit}:root{--grey:#F9FAFB;--green:#4A7C59;--green-dark:#3d674a;--green-light:#daffe5;--dark:#101828;--orange:#fe9a00;--orange--light:#fffbeb}body{min-width:320px;color:#4a5565;font-family:Inter,sans-serif;font-size:16px}.wrapper{min-height:100%;display:flex;flex-direction:column;overflow:clip}.wrapper>main{flex:1 1 auto}.wrapper>*{min-width:0}[class*=__container]{width:100%;max-width:1246px;margin:0 auto;padding-left:15px;padding-right:15px}h1{font-weight:600}h1{line-height:125%;letter-spacing:.01em;color:#fff;margin-bottom:16px}section{padding:64px 0}.btn{border-radius:8px;padding:10px 16px 9px;width:fit-content;display:flex;justify-content:center;align-items:center;background:#4a7c59;gap:16px;font-weight:500;font-size:14px;line-height:143%;letter-spacing:-.01em;text-align:center;color:#fff}p{font-weight:400;font-size:18px;line-height:163%;letter-spacing:-.02em;color:#364153}.hero-main{position:relative;overflow:hidden;min-height:100vh;display:flex;align-items:center}.hero-main__bg{position:fixed;inset:0;z-index:-1}.hero-main__bg img,.hero-main__bg picture{position:fixed;inset:0;width:100%;height:100%}.hero-main__bg img{object-fit:cover;object-position:center;position:relative}.hero-main__bg img::after{content:"";position:absolute;width:100%;height:100%;background:rgba(0,0,0,.48)}.hero-main__overlay{position:absolute;top:-100px;height:calc(100% + 100px);width:100%;inset:0;background:rgba(0,0,0,.48)}.hero-main__container{position:relative;z-index:2;margin-bottom:333px}.hero-main__content{width:100%;max-width:920px}.hero-main__title,.hero-main__title h1{font-weight:600}.hero-main__title,.hero-main__title h1{line-height:125%;letter-spacing:0;color:#fff;margin-bottom:32px}.hero-main__text,.hero-main__text p{font-weight:400}.hero-main__text,.hero-main__text p{line-height:163%;letter-spacing:0;color:#f3f4f6;margin-bottom:32px}.hero-main__buttons{display:flex;flex-wrap:wrap;gap:16px}.hero-main .btn{padding:25px 16px 25px 18px;font-weight:500;font-size:18px;line-height:156%;letter-spacing:-.02em;text-align:center;color:#fff}.button-transparent{background-color:rgba(255,255,255,.1);border:1.67px solid #fff;border-radius:8px;padding:24px 32px;padding:25px 16px;display:flex;justify-content:center;align-items:center;font-weight:500;font-size:18px;line-height:156%;letter-spacing:-.02em;text-align:center;color:#fff}@media (max-width:47.99875em){.hero-main .btn{padding:12px}.button-transparent{padding:12px}}.three-cards__cards{display:flex;justify-content:center;align-items:center;gap:32px;transform:translate(0,-180px)}.three-cards__card{position:relative;overflow:hidden;border-radius:14px;box-shadow:0 25px 50px -12px rgba(0,0,0,.25);padding:40px;align-self:stretch;flex:1 1 100%}.three-cards__background{position:absolute;top:0;left:0;height:100%;width:100%;object-fit:cover;z-index:1}.three-cards__background img{width:100%;height:100%;object-fit:cover}.three-cards__icon{position:relative;z-index:2;border-radius:14px;width:63px;height:63px;overflow:hidden;margin-bottom:24px}.three-cards__icon img{width:100%;height:100%;object-fit:cover}.three-cards__title{position:relative;z-index:2;font-weight:600;font-size:24px;line-height:133%;letter-spacing:0;color:#101828;margin-bottom:16px}.three-cards__text{position:relative;z-index:2;font-weight:400;font-size:18px;line-height:163%;letter-spacing:-.02em;color:#4a5565}.header{position:fixed;top:0;left:0;width:100%;z-index:1000;background-color:#fff;border-bottom:1px solid #e5e7eb}.header__container{display:flex;justify-content:space-between;align-items:center;gap:30px;min-height:70px;position:relative}.header .btn{line-height:100%}.link-to-call{padding-top:4px;display:flex;justify-content:center;align-items:center;gap:8px;font-weight:500;font-size:14px;line-height:143%;letter-spacing:-.01em;color:#364153}.menu{margin:0 auto}.menu__list{display:flex;justify-content:space-between;align-items:center;gap:16px}@media (max-width:56.25em){.menu__body{overflow:auto;padding:15px}.menu__list{gap:5px;flex-direction:column;justify-content:center}}.menu__item{padding-top:4px}.menu__link{font-weight:400;font-size:16px;line-height:143%;letter-spacing:-.01em;text-align:center;color:#364153}.menu__link--active{color:#4a7c59}.icon-menu{display:none}@media (max-width:56.25em){.menu__link{font-weight:500;font-size:16px}.icon-menu{display:block;position:relative;width:1.875rem;height:1.125rem;z-index:5}.icon-menu span,.icon-menu::after,.icon-menu::before{content:"";right:0;position:absolute;width:100%;height:2px;background-color:#000}.icon-menu::before{top:0}.icon-menu::after{bottom:0}.icon-menu span{top:calc(50% - 1px)}}
+		</style>
+		<link rel="modulepreload" crossorigin href="./js/common.min.js?v=1770398365629">
+		<script type="module" crossorigin="" src="./js/main.min.js?v=1770398365629"></script>
+		<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1770398365629" media="print" onload="this.media='all'">
+	</head>
 	<body>
 		<div class="wrapper">
-			
-		<header data-fls-header="" class="header">
-	<div class="header__container">
-		<div class="header__logo">
-			<a href="/"><img src="./assets/img/logo.svg" alt=""></a>
-		</div>
-		<div class="header__menu menu">
-	<nav class="menu__body">
-		<ul class="menu__list">
-			
-				
-					<li class="menu__item">
-						<a href="/" class="menu__link menu__link--active">Home</a>
-					</li>
-				
-				
-					<li class="menu__item">
-						<a href="/hardwood-flooring" class="menu__link">Hardwood Flooring</a>
-					</li>
-				
-				
-					<li class="menu__item">
-						<a href="/installation" class="menu__link">Installation</a>
-					</li>
-				
-				
-					<li class="menu__item">
-						<a href="/about" class="menu__link">About</a>
-					</li>
-				
-				
-					<li class="menu__item">
-						<a href="/contact" class="menu__link">Contact</a>
-					</li>
-				
-		</ul>
-	</nav>
-</div>
-
-
-		<a href="tel:9185551234" class="link-to-call">
-			<img src="./assets/img/icons/phone-dark.svg" alt="phone">
-			(918) 555-1234
-		</a>
-		<a href="" class="btn">Visit Showroom</a>
-		<button type="button" data-fls-menu="" class="menu__icon icon-menu"><span></span></button>
-	</div>
-</header>
-	
-			<main class="page">
-				
-		<section class="hero-main">
-    <div class="hero-main__bg">
-        <picture>
-            <source media="(min-width: 300px) and (max-width: 350px)" srcset="img/section-1/assets/img/home/1-320.jpg">
-            <source media="(min-width: 351px) and (max-width: 479px)" srcset="img/section-1/assets/img/home/1-480.jpg">
-            <source media="(min-width: 480px) and (max-width: 767px)" srcset="img/section-1/assets/img/home/1-768.jpg">
-            <source media="(min-width: 768px) and (max-width: 1023px)" srcset="./assets/img/home/1-1024.webp">
-            <source media="(min-width: 1024px) and (max-width: 1199px)" srcset="./assets/img/home/1-1200.webp">
-            <source media="(min-width: 1200px)" srcset="./assets/img/home/1.webp">
-            <img alt=""  src="./assets/img/home/1.webp" >
-        </picture>
-        <div class="hero-main__overlay"></div>
-    </div>
-
-    <div class="hero-main__container">
-        <div class="hero-main__content">
-            <div class="hero-main__title">
-                <h1>
-                    Tulsa's Local Flooring Store for Quality Materials & Expert Installation
-                </h1>
-            </div>
-            <div class="hero-main__text">
-                <p>
-                    Brucke Flooring is a locally owned flooring store in Tulsa offering quality flooring products, professional installation, and hardwood floor refinishing—all from one trusted team.
-                </p>
-            </div>
-            <div class="hero-main__buttons">
-                <a href="" class="btn">
-                    Visit Our Showroom
-                    <img src="./assets/img/icons/arrow-white.svg" alt="icon">
-                </a>
-                <a href="" class="button-transparent">
-                    Learn More
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<section class="three-cards background-white">
-    <div class="three-cards__container">
-        <div class="three-cards__cards">
-            <div class="three-cards__card">
-                <div class="three-cards__background">
-                    <img alt=""  src="./assets/img/home/2.webp" >
-                </div>
-                <div class="three-cards__icon">
-                    <img src="./assets/img/icons/1.svg" alt="icon">
-                </div>
-                <div class="three-cards__title">
-                    Professional Installation
-                </div>
-                <div class="three-cards__text">
-                    <p>
-                        Our expert installers handle every project with precision and care, ensuring quality results that last for decades.
-                    </p>
-                </div>
-            </div>
-
-            <div class="three-cards__card">
-                <div class="three-cards__background">
-                    <img alt=""  src="./assets/img/home/3.webp" >
-                </div>
-                <div class="three-cards__icon">
-                    <img src="./assets/img/icons/2.svg" alt="icon">
-                </div>
-                <div class="three-cards__title">
-                    Quality Products
-                </div>
-                <div class="three-cards__text">
-                    <p>
-                        Browse high-quality hardwood, engineered wood, laminate, LVP, and tile options—all carefully selected for performance and style.
-                    </p>
-                </div>
-            </div>
-
-            <div class="three-cards__card">
-                <div class="three-cards__background">
-                    <img alt=""  src="./assets/img/home/4.webp" >
-                </div>
-                <div class="three-cards__icon">
-                    <img src="./assets/img/icons/3.svg" alt="icon">
-                </div>
-                <div class="three-cards__title">
-                    Custom Solutions
-                </div>
-                <div class="three-cards__text">
-                    <p>
-                        From classic to contemporary, we help you find flooring that complements your home's unique character and your lifestyle.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-
-
-
-
-<section class="products background-white">
-    <div class="products__container">
-        <div class="products__title">
-            <h2>
-                Flooring Products for Every Space
-            </h2>
-        </div>
-        <div class="products__description">
-            <p>Our showroom features a carefully selected range of flooring options designed to perform well in Tulsa homes and businesses. We carry flooring for both walls and floors, with styles ranging from classic to modern.</p>
-        </div>
-        <div class="products__items">
-            <div class="products__item">
-                <div class="product">
-                    <div class="product__image">
-                        <img alt=""  src="./assets/img/home/5.webp" >
-                    </div>
-                    <div class="product__title">
-                        <h3>
-                            Solid Hardwood Flooring
-                        </h3>
-                    </div>
-                    <div class="product__text">
-                        <p>Timeless beauty and lasting durability. Can be refinished multiple times for generations of use.</p>
-                    </div>
-                    <a href="" class="product__link">
-                        Learn More
-                        <img src="./assets/img/icons/arrow-dark.svg" alt="">
-                    </a>
-                </div>
-            </div>
-            
-            <div class="products__item">
-                <div class="product">
-                    <div class="product__image">
-                        <img alt=""  src="./assets/img/home/6.webp" >
-                    </div>
-                    <div class="product__title">
-                        <h3>
-                            Engineered Hardwood Flooring
-                        </h3>
-                    </div>
-                    <div class="product__text">
-                        <p>The look of real wood with added stability. Ideal for areas where solid hardwood may not be suitable.</p>
-                    </div>
-                    <a href="" class="product__link">
-                        Learn More
-                        <img src="./assets/img/icons/arrow-dark.svg" alt="">
-                    </a>
-                </div>
-            </div>
-
-            <div class="products__item">
-                <div class="product">
-                    <div class="product__image">
-                        <img alt=""  src="./assets/img/home/7.webp" >
-                    </div>
-                    <div class="product__title">
-                        <h3>
-                            Laminate Flooring
-                        </h3>
-                    </div>
-                    <div class="product__text">
-                        <p>Budget-friendly and durable. Easy to maintain with a wide variety of wood-look and stone-look designs.</p>
-                    </div>
-                    <a href="" class="product__link">
-                        Learn More
-                        <img src="./assets/img/icons/arrow-dark.svg" alt="">
-                    </a>
-                </div>
-            </div>
-
-            <div class="products__item">
-                <div class="product">
-                    <div class="product__image">
-                        <img alt=""  src="./assets/img/home/8.webp" >
-                    </div>
-                    <div class="product__title">
-                        <h3>
-                            Luxury Vinyl Plank (LVP)
-                        </h3>
-                    </div>
-                    <div class="product__text">
-                        <p>Waterproof and resilient. Perfect for high-traffic areas, kitchens, and bathrooms without sacrificing style.</p>
-                    </div>
-                    <a href="" class="product__link">
-                        Learn More
-                        <img src="./assets/img/icons/arrow-dark.svg" alt="">
-                    </a>
-                </div>
-            </div>
-
-            <div class="products__item">
-                <div class="product">
-                    <div class="product__image">
-                        <img alt=""  src="./assets/img/home/9.webp" >
-                    </div>
-                    <div class="product__title">
-                        <h3>
-                            Tile for Floors, Walls & More
-                        </h3>
-                    </div>
-                    <div class="product__text">
-                        <p>From ceramic to natural stone. Ideal for backsplashes, showers, and floors that need to stand up to moisture.</p>
-                    </div>
-                    <a href="" class="product__link">
-                        Learn More
-                        <img src="./assets/img/icons/arrow-dark.svg" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<section class="professional-services background-grey">
-    <div class="professional-services__container">
-        <div class="professional-services__row">
-            <div class="professional-services__col professional-services__col--image">
-                <div class="image-wrapper">
-                    <img alt=""  src="./assets/img/home/10.webp" >
-                </div>
-            </div>
-
-            <div class="professional-services__col professional-services__col--text">
-                <div class="professional-services__title">
-                    <h2>
-                        Professional Installation & Refinishing Services
-                    </h2>
-                </div>
-                <div class="professional-services__description">
-                    <p>
-                        In addition to selling flooring, Brucke Flooring provides expert installation and refinishing services. Our experienced team handles projects of all sizes with attention to detail and clear communication from start to finish.
-                    </p>
-                </div>
-                <ul>
-                    <li>
-                        <img src="./assets/img/icons/check.svg" alt="icon">
-                        <div class="professional-services__item-text">
-                            <div class="professional-services__subtitle">
-                                <h3>
-                                    Flooring Installation for All Material Types
-                                </h3>
-                            </div>
-                            <div class="professional-services__text">
-                                <p>
-                                    Expert installation of hardwood, engineered, laminate, LVP, and tile flooring.
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <img src="./assets/img/icons/check.svg" alt="icon">
-                        <div class="professional-services__item-text">
-                            <div class="professional-services__subtitle">
-                                <h3>
-                                    Hardwood Floor Refinishing
-                                </h3>
-                            </div>
-                            <div class="professional-services__text">
-                                <p>
-                                    Restore your existing hardwood floors to their original beauty with professional refinishing.
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-
-                    <li>
-                        <img src="./assets/img/icons/check.svg" alt="icon">
-                        <div class="professional-services__item-text">
-                            <div class="professional-services__subtitle">
-                                <h3>
-                                    Water Damage Restoration
-                                </h3>
-                            </div>
-                            <div class="professional-services__text">
-                                <p>
-                                    Quick response and expert repairs for water-damaged flooring.
-                                </p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-                <a href="" class="btn">
-                    Learn About Installation
-                    <img src="./assets/img/icons/arrow-white.svg" alt="">
-                </a>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-
-<section class="more background-white">
-    <div class="more__container">
-        <div class="more__title">
-            <h2>
-                More Than a Flooring Store
-            </h2>
-        </div>
-        <div class="more__description">
-            <p>
-                What sets Brucke Flooring apart is experience and craftsmanship. We work closely with homeowners and contractors to ensure every project is done correctly, from subfloor preparation to final trim details.
-            </p>
-        </div>
-        <div class="more__items">
-            <div class="more__item">
-                <div class="more-item">
-                    <div class="more-item__icon">
-                        <img src="./assets/img/icons/4.svg" alt="icon">
-                    </div>
-                    <div class="more-item__subtitle">
-                        <h3>
-                            A Local Tulsa Showroom
-                        </h3>
-                    </div>
-                    <div class="more-item__text">
-                        <p>
-                            Visit us in person to see materials, compare options, and get expert advice.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="more__item">
-                <div class="more-item">
-                    <div class="more-item__icon">
-                        <img src="./assets/img/icons/5.svg" alt="icon">
-                    </div>
-                    <div class="more-item__subtitle">
-                        <h3>
-                            Skilled Installers & Finishers
-                        </h3>
-                    </div>
-                    <div class="more-item__text">
-                        <p>
-                            Our experienced team ensures quality workmanship on every project.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="more__item">
-                <div class="more-item">
-                    <div class="more-item__icon">
-                        <img src="./assets/img/icons/6.svg" alt="icon">
-                    </div>
-                    <div class="more-item__subtitle">
-                        <h3>
-                            Honest Recommendations
-                        </h3>
-                    </div>
-                    <div class="more-item__text">
-                        <p>
-                            We provide straightforward guidance based on your needs, not pressure.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="more__item">
-                <div class="more-item">
-                    <div class="more-item__icon">
-                        <img src="./assets/img/icons/7.svg" alt="icon">
-                    </div>
-                    <div class="more-item__subtitle">
-                        <h3>
-                            Quality Products
-                        </h3>
-                    </div>
-                    <div class="more-item__text">
-                        <p>
-                            Carefully selected materials designed for long-term performance.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-
-<img alt=""  src="./assets/img/home/11.webp" >
-
-
-<section class="serving background-white">
-    <div class="serving__container">
-        <div class="serving__title">
-            <h2>
-                Serving Tulsa & Surrounding Areas
-            </h2>
-        </div>
-        <div class="serving__description">
-            <p>
-                Brucke Flooring proudly serves Tulsa and nearby communities with reliable flooring products and professional service. Whether you're updating a single room or planning a full renovation, we're here to help from start to finish.
-            </p>
-        </div>
-    </div>
-</section>
-	
-			</main>
-			
-		<footer data-fls-footer="" class="footer">
-	<div class="footer__container">
-		<div class="footer__row">
-			<div class="footer__col">
-				<div class="col-wrapper">
-					<div class="footer__title">
-						<a href="">
-							<img src="./assets/img/logo-footer.svg" alt="logo">
+			<header data-fls-header="" class="header">
+				<div class="header__container">
+					<div class="header__logo">
+						<a href="/">
+							<img src="./assets/img/logo.svg" alt="">
 						</a>
 					</div>
-					<p>
-						Your trusted local flooring store in Tulsa, providing quality materials and expert installation since 1995.
-					</p>
-					<div class="footer__location">
-						<img src="./assets/img/icons/location-white.svg" alt="icon">
-						<div>
-							<p>1234 S Main St
-							<br>Tulsa, OK 74119</p>
+					<div class="header__menu menu">
+						<nav class="menu__body">
+							<ul class="menu__list">
+								<li class="menu__item">
+									<a href="/brucke-flooring/" class="menu__link menu__link--active">Home</a>
+								</li>
+								<li class="menu__item">
+									<a href="/brucke-flooring/hardwood-flooring/" class="menu__link">Hardwood Flooring</a>
+								</li>
+								<li class="menu__item">
+									<a href="/brucke-flooring/brucke-flooring/installation/" class="menu__link">Installation</a>
+								</li>
+								<li class="menu__item">
+									<a href="/brucke-flooring/about/" class="menu__link">About</a>
+								</li>
+								<li class="menu__item">
+									<a href="/brucke-flooring/contact/" class="menu__link">Contact</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+					<a href="tel:9185551234" class="link-to-call">
+						<img src="./assets/img/icons/phone-dark.svg" alt="phone">
+						(918) 555-1234
+					</a>
+					<a href="" class="btn">Visit Showroom</a>
+					<button type="button" data-fls-menu="" class="menu__icon icon-menu">
+						<span></span>
+					</button>
+				</div>
+			</header>
+			<main class="page">
+				<section class="hero-main">
+					<div class="hero-main__bg">
+						<picture>
+							<source media="(min-width: 300px) and (max-width: 350px)" srcset="img/section-1/assets/img/home/1-320.jpg">
+							<source media="(min-width: 351px) and (max-width: 479px)" srcset="img/section-1/assets/img/home/1-480.jpg">
+							<source media="(min-width: 480px) and (max-width: 767px)" srcset="img/section-1/assets/img/home/1-768.jpg">
+							<source media="(min-width: 768px) and (max-width: 1023px)" srcset="./assets/img/home/1-1024.webp">
+							<source media="(min-width: 1024px) and (max-width: 1199px)" srcset="./assets/img/home/1-1200.webp">
+							<source media="(min-width: 1200px)" srcset="./assets/img/home/1.webp">
+							<img alt="" src="./assets/img/home/1.webp">
+						</picture>
+						<div class="hero-main__overlay"></div>
+					</div>
+					<div class="hero-main__container">
+						<div class="hero-main__content">
+							<div class="hero-main__title">
+								<h1>Tulsa's Local Flooring Store for Quality Materials & Expert Installation</h1>
+							</div>
+							<div class="hero-main__text">
+								<p>
+									Brucke Flooring is a locally owned flooring store in Tulsa offering quality flooring products, professional installation, and hardwood floor refinishing—all from one trusted team.
+								</p>
+							</div>
+							<div class="hero-main__buttons">
+								<a href="" class="btn">
+									Visit Our Showroom
+									<img src="./assets/img/icons/arrow-white.svg" alt="icon">
+								</a>
+								<a href="" class="button-transparent">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="three-cards background-white">
+					<div class="three-cards__container">
+						<div class="three-cards__cards">
+							<div class="three-cards__card">
+								<div class="three-cards__background">
+									<img alt="" src="./assets/img/home/2.webp">
+								</div>
+								<div class="three-cards__icon">
+									<img src="./assets/img/icons/1.svg" alt="icon">
+								</div>
+								<div class="three-cards__title">Professional Installation</div>
+								<div class="three-cards__text">
+									<p>
+										Our expert installers handle every project with precision and care, ensuring quality results that last for decades.
+									</p>
+								</div>
+							</div>
+							<div class="three-cards__card">
+								<div class="three-cards__background">
+									<img alt="" src="./assets/img/home/3.webp">
+								</div>
+								<div class="three-cards__icon">
+									<img src="./assets/img/icons/2.svg" alt="icon">
+								</div>
+								<div class="three-cards__title">Quality Products</div>
+								<div class="three-cards__text">
+									<p>
+										Browse high-quality hardwood, engineered wood, laminate, LVP, and tile options—all carefully selected for performance and style.
+									</p>
+								</div>
+							</div>
+							<div class="three-cards__card">
+								<div class="three-cards__background">
+									<img alt="" src="./assets/img/home/4.webp">
+								</div>
+								<div class="three-cards__icon">
+									<img src="./assets/img/icons/3.svg" alt="icon">
+								</div>
+								<div class="three-cards__title">Custom Solutions</div>
+								<div class="three-cards__text">
+									<p>
+										From classic to contemporary, we help you find flooring that complements your home's unique character and your lifestyle.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="products background-white">
+					<div class="products__container">
+						<div class="products__title">
+							<h2>Flooring Products for Every Space</h2>
+						</div>
+						<div class="products__description">
+							<p>
+								Our showroom features a carefully selected range of flooring options designed to perform well in Tulsa homes and businesses. We carry flooring for both walls and floors, with styles ranging from classic to modern.
+							</p>
+						</div>
+						<div class="products__items">
+							<div class="products__item">
+								<div class="product">
+									<div class="product__image">
+										<img alt="" src="./assets/img/home/5.webp">
+									</div>
+									<div class="product__title">
+										<h3>Solid Hardwood Flooring</h3>
+									</div>
+									<div class="product__text">
+										<p>
+											Timeless beauty and lasting durability. Can be refinished multiple times for generations of use.
+										</p>
+									</div>
+									<a href="" class="product__link">
+										Learn More
+										<img src="./assets/img/icons/arrow-dark.svg" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="products__item">
+								<div class="product">
+									<div class="product__image">
+										<img alt="" src="./assets/img/home/6.webp">
+									</div>
+									<div class="product__title">
+										<h3>Engineered Hardwood Flooring</h3>
+									</div>
+									<div class="product__text">
+										<p>
+											The look of real wood with added stability. Ideal for areas where solid hardwood may not be suitable.
+										</p>
+									</div>
+									<a href="" class="product__link">
+										Learn More
+										<img src="./assets/img/icons/arrow-dark.svg" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="products__item">
+								<div class="product">
+									<div class="product__image">
+										<img alt="" src="./assets/img/home/7.webp">
+									</div>
+									<div class="product__title">
+										<h3>Laminate Flooring</h3>
+									</div>
+									<div class="product__text">
+										<p>
+											Budget-friendly and durable. Easy to maintain with a wide variety of wood-look and stone-look designs.
+										</p>
+									</div>
+									<a href="" class="product__link">
+										Learn More
+										<img src="./assets/img/icons/arrow-dark.svg" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="products__item">
+								<div class="product">
+									<div class="product__image">
+										<img alt="" src="./assets/img/home/8.webp">
+									</div>
+									<div class="product__title">
+										<h3>Luxury Vinyl Plank (LVP)</h3>
+									</div>
+									<div class="product__text">
+										<p>
+											Waterproof and resilient. Perfect for high-traffic areas, kitchens, and bathrooms without sacrificing style.
+										</p>
+									</div>
+									<a href="" class="product__link">
+										Learn More
+										<img src="./assets/img/icons/arrow-dark.svg" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="products__item">
+								<div class="product">
+									<div class="product__image">
+										<img alt="" src="./assets/img/home/9.webp">
+									</div>
+									<div class="product__title">
+										<h3>Tile for Floors, Walls & More</h3>
+									</div>
+									<div class="product__text">
+										<p>
+											From ceramic to natural stone. Ideal for backsplashes, showers, and floors that need to stand up to moisture.
+										</p>
+									</div>
+									<a href="" class="product__link">
+										Learn More
+										<img src="./assets/img/icons/arrow-dark.svg" alt="">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="professional-services background-grey">
+					<div class="professional-services__container">
+						<div class="professional-services__row">
+							<div class="professional-services__col professional-services__col--image">
+								<div class="image-wrapper">
+									<img alt="" src="./assets/img/home/10.webp">
+								</div>
+							</div>
+							<div class="professional-services__col professional-services__col--text">
+								<div class="professional-services__title">
+									<h2>Professional Installation & Refinishing Services</h2>
+								</div>
+								<div class="professional-services__description">
+									<p>
+										In addition to selling flooring, Brucke Flooring provides expert installation and refinishing services. Our experienced team handles projects of all sizes with attention to detail and clear communication from start to finish.
+									</p>
+								</div>
+								<ul>
+									<li>
+										<img src="./assets/img/icons/check.svg" alt="icon">
+										<div class="professional-services__item-text">
+											<div class="professional-services__subtitle">
+												<h3>Flooring Installation for All Material Types</h3>
+											</div>
+											<div class="professional-services__text">
+												<p>Expert installation of hardwood, engineered, laminate, LVP, and tile flooring.</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<img src="./assets/img/icons/check.svg" alt="icon">
+										<div class="professional-services__item-text">
+											<div class="professional-services__subtitle">
+												<h3>Hardwood Floor Refinishing</h3>
+											</div>
+											<div class="professional-services__text">
+												<p>
+													Restore your existing hardwood floors to their original beauty with professional refinishing.
+												</p>
+											</div>
+										</div>
+									</li>
+									<li>
+										<img src="./assets/img/icons/check.svg" alt="icon">
+										<div class="professional-services__item-text">
+											<div class="professional-services__subtitle">
+												<h3>Water Damage Restoration</h3>
+											</div>
+											<div class="professional-services__text">
+												<p>Quick response and expert repairs for water-damaged flooring.</p>
+											</div>
+										</div>
+									</li>
+								</ul>
+								<a href="" class="btn">
+									Learn About Installation
+									<img src="./assets/img/icons/arrow-white.svg" alt="">
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="more background-white">
+					<div class="more__container">
+						<div class="more__title">
+							<h2>More Than a Flooring Store</h2>
+						</div>
+						<div class="more__description">
+							<p>
+								What sets Brucke Flooring apart is experience and craftsmanship. We work closely with homeowners and contractors to ensure every project is done correctly, from subfloor preparation to final trim details.
+							</p>
+						</div>
+						<div class="more__items">
+							<div class="more__item">
+								<div class="more-item">
+									<div class="more-item__icon">
+										<img src="./assets/img/icons/4.svg" alt="icon">
+									</div>
+									<div class="more-item__subtitle">
+										<h3>A Local Tulsa Showroom</h3>
+									</div>
+									<div class="more-item__text">
+										<p>Visit us in person to see materials, compare options, and get expert advice.</p>
+									</div>
+								</div>
+							</div>
+							<div class="more__item">
+								<div class="more-item">
+									<div class="more-item__icon">
+										<img src="./assets/img/icons/5.svg" alt="icon">
+									</div>
+									<div class="more-item__subtitle">
+										<h3>Skilled Installers & Finishers</h3>
+									</div>
+									<div class="more-item__text">
+										<p>Our experienced team ensures quality workmanship on every project.</p>
+									</div>
+								</div>
+							</div>
+							<div class="more__item">
+								<div class="more-item">
+									<div class="more-item__icon">
+										<img src="./assets/img/icons/6.svg" alt="icon">
+									</div>
+									<div class="more-item__subtitle">
+										<h3>Honest Recommendations</h3>
+									</div>
+									<div class="more-item__text">
+										<p>We provide straightforward guidance based on your needs, not pressure.</p>
+									</div>
+								</div>
+							</div>
+							<div class="more__item">
+								<div class="more-item">
+									<div class="more-item__icon">
+										<img src="./assets/img/icons/7.svg" alt="icon">
+									</div>
+									<div class="more-item__subtitle">
+										<h3>Quality Products</h3>
+									</div>
+									<div class="more-item__text">
+										<p>Carefully selected materials designed for long-term performance.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<img alt="" src="./assets/img/home/11.webp">
+				<section class="serving background-white">
+					<div class="serving__container">
+						<div class="serving__title">
+							<h2>Serving Tulsa & Surrounding Areas</h2>
+						</div>
+						<div class="serving__description">
+							<p>
+								Brucke Flooring proudly serves Tulsa and nearby communities with reliable flooring products and professional service. Whether you're updating a single room or planning a full renovation, we're here to help from start to finish.
+							</p>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer data-fls-footer="" class="footer">
+				<div class="footer__container">
+					<div class="footer__row">
+						<div class="footer__col">
+							<div class="col-wrapper">
+								<div class="footer__title">
+									<a href="">
+										<img src="./assets/img/logo-footer.svg" alt="logo">
+									</a>
+								</div>
+								<p>
+									Your trusted local flooring store in Tulsa, providing quality materials and expert installation since 1995.
+								</p>
+								<div class="footer__location">
+									<img src="./assets/img/icons/location-white.svg" alt="icon">
+									<div>
+										<p>
+											1234 S Main St
+											<br>
+											Tulsa, OK 74119
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="footer__col">
+							<div class="col-wrapper">
+								<div class="footer__title">
+									<h2>Products</h2>
+								</div>
+								<ul>
+									<li>
+										<a href="">Solid Hardwood</a>
+									</li>
+									<li>
+										<a href="">Engineered Hardwood</a>
+									</li>
+									<li>
+										<a href="">Laminate Flooring</a>
+									</li>
+									<li>
+										<a href="">Luxury Vinyl Plank</a>
+									</li>
+									<li>
+										<a href="">Tile & Stone</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer__col">
+							<div class="col-wrapper">
+								<div class="footer__title">
+									<h2>Services</h2>
+								</div>
+								<ul>
+									<li>
+										<a href="">Flooring Installation</a>
+									</li>
+									<li>
+										<a href="">Hardwood Refinishing</a>
+									</li>
+									<li>
+										<a href="">Water Damage Restoration</a>
+									</li>
+									<li>
+										<a href="">Free Consultation</a>
+									</li>
+									<li>
+										<a href="">Financing Options</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="footer__col">
+							<div class="col-wrapper">
+								<div class="footer__title">
+									<h2>Contact Us</h2>
+								</div>
+								<ul>
+									<li>
+										<a href="tel:9185551234">
+											<img src="./assets/img/icons/phone-grey.svg" alt="phone">
+											(918) 555-1234
+										</a>
+									</li>
+									<li>
+										<a href="mailto:info@bruckeflooring.com">
+											<img src="./assets/img/icons/mail-grey.svg" alt="email">
+											info@bruckeflooring.com
+										</a>
+									</li>
+								</ul>
+								<h3>Hours:</h3>
+								<p>
+									Mon-Fri: 9am - 6pm
+									<br>
+									Sat: 10am - 4pm
+									<br>
+									Sun: Closed
+								</p>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="footer__col">
-				<div class="col-wrapper">
-					<div class="footer__title">
-						<h2>Products</h2>
+				<div class="footer__container">
+					<div class="row">
+						<div class="col">© 2026 Brucke Flooring. All rights reserved.</div>
+						<div class="col">
+							<a href="">Privacy Policy</a>
+							<a href="">Terms of Service</a>
+						</div>
 					</div>
-					<ul>
-						<li>
-							<a href="">Solid Hardwood</a>
-						</li>
-						<li>
-							<a href="">Engineered Hardwood</a>
-						</li>
-						<li>
-							<a href="">Laminate Flooring</a>
-						</li>
-						<li>
-							<a href="">Luxury Vinyl Plank</a>
-						</li>
-						<li>
-							<a href="">Tile & Stone</a>
-						</li>
-					</ul>
 				</div>
-			</div>
-			<div class="footer__col">
-				<div class="col-wrapper">
-					<div class="footer__title">
-						<h2>Services</h2>
-					</div>
-					<ul>
-						<li>
-							<a href="">Flooring Installation</a>
-						</li>
-						<li>
-							<a href="">Hardwood Refinishing</a>
-						</li>
-						<li>
-							<a href="">Water Damage Restoration</a>
-						</li>
-						<li>
-							<a href="">Free Consultation</a>
-						</li>
-						<li>
-							<a href="">Financing Options</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="footer__col">
-				<div class="col-wrapper">
-					<div class="footer__title">
-						<h2>Contact Us</h2>
-					</div>
-					<ul>
-						<li>
-							<a href="tel:9185551234">
-								<img src="./assets/img/icons/phone-grey.svg" alt="phone">
-								(918) 555-1234
-							</a>
-						</li>
-						<li>
-							<a href="mailto:info@bruckeflooring.com">
-								<img src="./assets/img/icons/mail-grey.svg" alt="email">
-								info@bruckeflooring.com
-							</a>
-						</li>
-					</ul>
-					
-					<h3>Hours:</h3>
-					<p>Mon-Fri: 9am - 6pm
-					<br>Sat: 10am - 4pm
-					<br>Sun: Closed</p>
-				</div>
-			</div>
+			</footer>
 		</div>
-	</div>
-	<div class="footer__container">
-		<div class="row">
-			<div class="col">
-				© 2026 Brucke Flooring. All rights reserved.
-			</div>
-			<div class="col">
-				<a href="">
-					Privacy Policy
-				</a>
-				<a href="">
-					Terms of Service
-				</a>
-			</div>
-		</div>
-	</div>
-</footer>
-	
-		</div>
-		
-	
+		<noscript>
+			<link rel="stylesheet" crossorigin="" href="./css/main.min.css?v=1770398365629">
+		</noscript>
 	</body>
 </html>
-
